@@ -1,0 +1,34 @@
+.hero.is-large .hero-body {
+    padding-bottom: 14rem;
+    padding-top: 14rem;
+}
+
+.hero.hero-header {
+    background-image: url('../img/hero-header-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hero .navbar.pl-navbar {
+    background: transparent;
+}
+
+.hero.is-primary .navbar-item,
+.hero.is-primary .navbar-link {
+    transition: background .4s;
+}
+
+.hero.is-primary a.navbar-item:hover,
+.hero.is-primary a.navbar-item.is-active,
+.hero.is-primary .navbar-link:hover,
+.hero.is-primary .navbar-link.is-active {
+    background-color: rgba(255, 255, 255, .08);
+}
+
+.hero .navbar.pl-navbar.is-out-hero {
+    background: #fff;
+    color: #ccc;
+    box-shadow: 0 2px 5px #aaa;
+}
