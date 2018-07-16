@@ -4,11 +4,10 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="title" content="Pedro Lavôr" />
     <meta name="description" content="Desenvolvedor Full Stack" />
     <title>Pedro Lavôr</title>
-    <base href="/pedrolavor">
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/custom-bulma.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -25,8 +24,8 @@
     <nav id="pl-navbar" class="navbar is-fixed-top pl-navbar">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item is-invisible" href="/">
-                    <span class="is-size-4">Pedro Lavôr</span>
+                <a class="navbar-item" href="/">
+                    <span class="is-size-4 is-uppercase">Pedro Lavôr</span>
                 </a>
                 <span class="navbar-burger burger" data-target="collapsed-menu">
                     <span></span>
@@ -54,8 +53,8 @@
     </nav>
     <!-- END NAV MENU -->
 
-    <!-- HEADER -->
-    <section class="hero is-large hero-header">
+    <!-- HERO HEADER -->
+    <section id="hero-header" class="hero is-large hero-header">
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h1 class="title is-uppercase is-italic">
@@ -67,7 +66,7 @@
             </div>
         </div>
     </section>
-    <!-- END HEADER -->
+    <!-- END HERO HEADER -->
 
     <!-- QUEM SOU -->
     <section id="quem-sou" class="section">
@@ -155,39 +154,6 @@
         <progress class="progress is-info" value="45" max="100">45%</progress>
     </section>
     <!-- END TECNOLOGIAS -->
-
-    <!-- FERRAMENTAS -->
-    <section class="section">
-        <div class="container">
-            <p class="title">Ferramentas</p>
-            <nav class="level is-mobile">
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="heading">Linux Mint</p>
-                        <p class="title">123</p>
-                    </div>
-                </div>
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="heading">VS Code</p>
-                        <p class="title">3,456</p>
-                    </div>
-                </div>
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="heading">Git</p>
-                        <p class="title">789</p>
-                    </div>
-                </div>
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="heading">Postman</p>
-                        <p class="title">789</p>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
 
     <!-- PROJETOS -->
     <section id="projetos" class="section">
@@ -326,6 +292,7 @@
     </footer>
     <!-- END FOOTER CONTATO -->
 
+    <script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

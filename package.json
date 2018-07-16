@@ -1,19 +1,22 @@
 {
-    "name": "portfolio-pedrolavor",
-    "version": "0.0.1",
-    "description": "Portfolio Pedro Lavôr",
-    "main": "index.js",
-    "scripts": {
-        "gulp": "./node_modules/gulp/bin/gulp.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Pedro Lavôr <thiagolavor33@gmail.com>",
-    "license": "ISC",
-    "devDependencies": {
-        "bulma": "^0.7.1",
-        "browser-sync": "^2.24.5",
-        "gulp": "^3.9.1",
-        "gulp-cli": "^2.0.1",
-        "gulp-sass": "^4.0.1"
-    }
+  "name": "portfolio-pedrolavor",
+  "version": "0.0.1",
+  "description": "Portfolio Pedro Lavôr",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "./node_modules/gulp/bin/gulp.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Lavôr <thiagolavor33@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "smooth-scroll": "^14.2.0"
+  }
 }
