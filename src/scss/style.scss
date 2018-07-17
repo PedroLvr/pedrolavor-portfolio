@@ -84,3 +84,36 @@
         font-size: 1.8rem;
     }
 }
+
+
+
+///////////////////////////////////////////////////////////////////
+//////////////////////// TECH AND TOOLS ///////////////////////////
+///////////////////////////////////////////////////////////////////
+#tecnologias {
+    background-color: #f4f4f4;
+
+    .level-item {
+        opacity: .6;
+        filter: grayscale(1);
+        transform: scale(.95);
+        transition: filter 1.2s, opacity 1.2s, transform .5s;
+
+        .image {
+            margin: auto;
+        }
+
+        .heading {
+            font-weight: bold;
+            color: #888;
+            transition: color 1.2s;
+        }
+
+        &.colored {
+            filter: grayscale(0);
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+}

@@ -54,3 +54,21 @@
   @media screen and (min-width: 769px) {
     .hero.hero-header .subtitle {
       font-size: 1.8rem; } }
+
+#tecnologias {
+  background-color: #f4f4f4; }
+  #tecnologias .level-item {
+    opacity: .6;
+    filter: grayscale(1);
+    transform: scale(0.95);
+    transition: filter 1.2s, opacity 1.2s, transform .5s; }
+    #tecnologias .level-item .image {
+      margin: auto; }
+    #tecnologias .level-item .heading {
+      font-weight: bold;
+      color: #888;
+      transition: color 1.2s; }
+    #tecnologias .level-item.colored {
+      filter: grayscale(0);
+      opacity: 1;
+      transform: scale(1); }

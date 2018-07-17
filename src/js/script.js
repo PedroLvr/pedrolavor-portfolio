@@ -48,6 +48,36 @@ document.addEventListener("DOMContentLoaded", function (event) {
             });
         });
     }
+
+
+
+    ////////////////////////////////////////////////////////////
+    ///////////////////// TECNOLOGIAS //////////////////////////
+    ////////////////////////////////////////////////////////////
+
+    /*
+     * DESTACAR TECNOLOGIAS EM SEQUENCIA
+    */
+    (function(){
+        var tecnologias = document.querySelectorAll('.level-item');
+        var countTecnologias = tecnologias.length;
+        var i = 0;
+        (function coloreItem(){
+            var item = tecnologias[i];
+            var titulo = item.querySelector('.heading');
+            item.classList.add('colored');
+            titulo.style.color = titulo.dataset.color;
+            setTimeout(function(){
+                item.classList.remove('colored');
+                titulo.style.color = '';
+            }, 1700);
+            setTimeout(function(){
+                i = ((i + 1) === countTecnologias) ? 0 : (i + 1);
+                coloreItem();
+            }, 1600);
+        })();
+    })();
+
 }, false);
 
 
