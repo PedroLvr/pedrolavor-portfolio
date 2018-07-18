@@ -86,6 +86,37 @@
 }
 
 
+///////////////////////////////////////////////////////////////////
+/////////////////////////// QUEM SOU //////////////////////////////
+///////////////////////////////////////////////////////////////////
+section#quem-sou {
+    padding-top: 150px;
+
+    .card {
+        border-radius: 8px;
+        background: #f4f4f4;
+    }
+
+    .card-image {
+        position: relative;
+        top: -107px;
+
+        .image {
+            margin: auto;
+        }
+
+        img {
+            border-radius: 50%;
+            border: 5px solid #ddd;
+        }
+    }
+
+    .card-content {
+        margin-top: -107px;
+    }
+}
+
+
 
 ///////////////////////////////////////////////////////////////////
 //////////////////////// TECH AND TOOLS ///////////////////////////
@@ -94,10 +125,10 @@
     background-color: #f4f4f4;
 
     .level-item {
-        opacity: .6;
-        filter: grayscale(1);
-        transform: scale(.95);
-        transition: filter 1.2s, opacity 1.2s, transform .5s;
+        opacity: .7;
+        filter: grayscale(.2);
+        // transform: scale(.95);
+        // transition: filter 1.2s, opacity 1.2s, transform .5s;
 
         .image {
             margin: auto;
@@ -117,3 +148,29 @@
     }
 
 }
+
+
+
+///////////////////////////////////////////////////////////////////
+//////////////////////////// CONTATO //////////////////////////////
+///////////////////////////////////////////////////////////////////
+section#contato {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #353535;
+    color: #c4c4c4;
+
+    .title {
+        color: #f4f4f4;
+    }
+
+    .subtitle {
+        color: #c4c4c4;
+    }
+}
+
+
+
+///////////////////////////////////////////////////////////////////
+//////////////////////////// FOOTER ///////////////////////////////
+///////////////////////////////////////////////////////////////////

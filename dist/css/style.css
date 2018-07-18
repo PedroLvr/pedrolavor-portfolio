@@ -55,13 +55,27 @@
     .hero.hero-header .subtitle {
       font-size: 1.8rem; } }
 
+section#quem-sou {
+  padding-top: 150px; }
+  section#quem-sou .card {
+    border-radius: 8px;
+    background: #f4f4f4; }
+  section#quem-sou .card-image {
+    position: relative;
+    top: -107px; }
+    section#quem-sou .card-image .image {
+      margin: auto; }
+    section#quem-sou .card-image img {
+      border-radius: 50%;
+      border: 5px solid #ddd; }
+  section#quem-sou .card-content {
+    margin-top: -107px; }
+
 #tecnologias {
   background-color: #f4f4f4; }
   #tecnologias .level-item {
-    opacity: .6;
-    filter: grayscale(1);
-    transform: scale(0.95);
-    transition: filter 1.2s, opacity 1.2s, transform .5s; }
+    opacity: .7;
+    filter: grayscale(0.2); }
     #tecnologias .level-item .image {
       margin: auto; }
     #tecnologias .level-item .heading {
@@ -72,3 +86,13 @@
       filter: grayscale(0);
       opacity: 1;
       transform: scale(1); }
+
+section#contato {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #353535;
+  color: #c4c4c4; }
+  section#contato .title {
+    color: #f4f4f4; }
+  section#contato .subtitle {
+    color: #c4c4c4; }
