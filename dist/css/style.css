@@ -1,3 +1,6 @@
+body {
+  background: #fafafa; }
+
 .navbar.pl-navbar {
   background: transparent;
   transition: background .5s; }
@@ -6,25 +9,29 @@
   .navbar.pl-navbar .navbar-item,
   .navbar.pl-navbar .navbar-link {
     color: #e4e4e4;
-    transition: opacity .5s; }
+    transition: opacity .5s, background .5s; }
     .navbar.pl-navbar .navbar-item:hover, .navbar.pl-navbar .navbar-item.is-active,
     .navbar.pl-navbar .navbar-link:hover,
     .navbar.pl-navbar .navbar-link.is-active {
-      background-color: rgba(255, 255, 255, 0.1); }
-  .navbar.pl-navbar .navbar-burger:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
+      background-color: rgba(255, 255, 255, 0.05); }
+  .navbar.pl-navbar .navbar-burger {
+    transition: opacity .5s, background .5s; }
+    .navbar.pl-navbar .navbar-burger:hover {
+      background-color: rgba(255, 255, 255, 0.05); }
   .navbar.pl-navbar .navbar-burger span {
     background-color: #e4e4e4; }
   .navbar.pl-navbar .navbar-menu {
     text-align: center; }
     @media screen and (max-width: 1087px) {
       .navbar.pl-navbar .navbar-menu {
-        background-color: rgba(255, 255, 255, 0.1); } }
+        background-color: rgba(255, 255, 255, 0.05); } }
 
-.navbar.pl-navbar.is-out-header {
-  background: rgba(0, 10, 10, 0.95);
+.navbar.pl-navbar.visible,
+.navbar.pl-navbar.visible-active {
+  background: #1a1a1a;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
-  .navbar.pl-navbar.is-out-header .navbar-brand .navbar-item {
+  .navbar.pl-navbar.visible .navbar-brand .navbar-item,
+  .navbar.pl-navbar.visible-active .navbar-brand .navbar-item {
     opacity: 1; }
 
 .hero.is-large .hero-body {
@@ -43,7 +50,7 @@
 
 .hero.hero-header .title {
   font-size: 2.2rem;
-  color: #e4e4e4; }
+  color: #ddd; }
   @media screen and (min-width: 769px) {
     .hero.hero-header .title {
       font-size: 3.4rem; } }
@@ -56,20 +63,20 @@
       font-size: 1.8rem; } }
 
 section#quem-sou {
-  padding-top: 150px; }
+  padding-top: 130px; }
   section#quem-sou .card {
     border-radius: 8px;
     background: #f4f4f4; }
   section#quem-sou .card-image {
     position: relative;
-    top: -107px; }
+    top: -100px; }
     section#quem-sou .card-image .image {
       margin: auto; }
     section#quem-sou .card-image img {
       border-radius: 50%;
       border: 5px solid #ddd; }
   section#quem-sou .card-content {
-    margin-top: -107px; }
+    margin-top: -120px; }
 
 #tecnologias {
   background-color: #f4f4f4; }
@@ -90,9 +97,13 @@ section#quem-sou {
 section#contato {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #353535;
-  color: #c4c4c4; }
+  background-color: #1d1d1d;
+  color: #888; }
   section#contato .title {
-    color: #f4f4f4; }
-  section#contato .subtitle {
-    color: #c4c4c4; }
+    color: #ddd; }
+
+footer.footer {
+  color: #888; }
+  footer.footer .button.is-primary.is-outlined:hover,
+  footer.footer .button.is-primary.is-outlined:focus {
+    color: #1d1d1d; }

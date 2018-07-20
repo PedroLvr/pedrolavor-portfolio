@@ -1,6 +1,11 @@
-$footer-background-color: #333;
+$primary:#19c1c1;
+$link: $primary;
+$link-hover: #4a959a;
+$danger: #E8305E;
 
-$dimensions: (16, 24, 32, 48, 64, 96, 128, 215, 256);
+$footer-background-color: #1a1a1a;
+$dimensions: (16, 24, 32, 48, 64, 96, 128, 200, 256);
+
 
 @charset 'utf-8';
 @import '../../node_modules/bulma/bulma.sass';

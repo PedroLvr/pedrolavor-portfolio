@@ -10,17 +10,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
      * Change navbar style when window scroll
     */
     (function(){
-
-    })()
-    window.addEventListener('scroll', function(e){
-        var $navbar = document.getElementById('pl-navbar');
-        var $heroHeader = document.getElementById('hero-header');
-        if($heroHeader.getBoundingClientRect().bottom - $navbar.offsetHeight <= 0) {
-            $navbar.classList.add('is-out-header');
-        } else {
-            $navbar.classList.remove('is-out-header');
+        function checkNavbar() {
+            var $navbar = document.getElementById('pl-navbar');
+            var $heroHeader = document.getElementById('hero-header');
+            if($heroHeader.getBoundingClientRect().bottom - $navbar.offsetHeight <= 0) {
+                $navbar.classList.add('visible');
+            } else {
+                $navbar.classList.remove('visible');
+            }
         }
-    });
+        checkNavbar();
+        window.addEventListener('scroll', checkNavbar);
+    })();
 
     /*
      * SMOOTH SCROLL
@@ -43,11 +44,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if ($navBurgers.length > 0) {
         $navBurgers.forEach(function (el) {
             el.addEventListener('click', () => {
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
+                const $navbar = el.closest('.navbar');
+                const $menu = document.getElementById(el.dataset.target);
+                $navbar.classList.toggle('visible-active');
+                $menu.classList.toggle('is-active');
                 el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
             });
         });
     }

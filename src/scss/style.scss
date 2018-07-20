@@ -1,3 +1,6 @@
+body {
+    background: #fafafa;
+}
 ///////////////////////////////////////////////////////////////////
 ////////////////////////// NAVBAR MENU ////////////////////////////
 ///////////////////////////////////////////////////////////////////
@@ -12,16 +15,19 @@
     .navbar-item,
     .navbar-link {
         color: #e4e4e4;
-        transition: opacity .5s;
+        transition: opacity .5s, background .5s;
 
         &:hover,
         &.is-active {
-            background-color: rgba(255, 255, 255, .1);
+            background-color: rgba(255, 255, 255, .05);
         }
     }
 
-    .navbar-burger:hover {
-        background-color: rgba(255, 255, 255, .1);
+    .navbar-burger{
+        transition: opacity .5s, background .5s;
+        &:hover {
+            background-color: rgba(255, 255, 255, .05);
+        }
     }
     .navbar-burger span {
         background-color: #e4e4e4;
@@ -31,13 +37,14 @@
         text-align: center;
         
         @media screen and (max-width: 1087px) {
-            background-color: rgba(255, 255, 255, .1);
+            background-color: rgba(255, 255, 255, .05);
         }
     }
 }
 
-.navbar.pl-navbar.is-out-header {
-    background: rgba(0, 10, 10, .95);
+.navbar.pl-navbar.visible,
+.navbar.pl-navbar.visible-active {
+    background: #1a1a1a;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
 
     .navbar-brand .navbar-item {
@@ -69,7 +76,7 @@
 
 .hero.hero-header .title {
     font-size: 2.2rem;
-    color: #e4e4e4;
+    color: #ddd;
 
     @media screen and (min-width: 769px) {
         font-size: 3.4rem;
@@ -90,7 +97,7 @@
 /////////////////////////// QUEM SOU //////////////////////////////
 ///////////////////////////////////////////////////////////////////
 section#quem-sou {
-    padding-top: 150px;
+    padding-top: 130px;
 
     .card {
         border-radius: 8px;
@@ -99,7 +106,7 @@ section#quem-sou {
 
     .card-image {
         position: relative;
-        top: -107px;
+        top: -100px;
 
         .image {
             margin: auto;
@@ -112,7 +119,7 @@ section#quem-sou {
     }
 
     .card-content {
-        margin-top: -107px;
+        margin-top: -120px;
     }
 }
 
@@ -157,15 +164,11 @@ section#quem-sou {
 section#contato {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #353535;
-    color: #c4c4c4;
+    background-color: #1d1d1d;
+    color: #888;
 
     .title {
-        color: #f4f4f4;
-    }
-
-    .subtitle {
-        color: #c4c4c4;
+        color: #ddd;
     }
 }
 
@@ -174,3 +177,11 @@ section#contato {
 ///////////////////////////////////////////////////////////////////
 //////////////////////////// FOOTER ///////////////////////////////
 ///////////////////////////////////////////////////////////////////
+footer.footer {
+    color: #888;
+
+    .button.is-primary.is-outlined:hover,
+    .button.is-primary.is-outlined:focus {
+        color: #1d1d1d;
+    }
+}
