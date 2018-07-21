@@ -1,5 +1,5 @@
 body {
-  background: #fafafa; }
+  background: #f4f4f4; }
 
 .navbar.pl-navbar {
   background: transparent;
@@ -62,42 +62,35 @@ body {
     .hero.hero-header .subtitle {
       font-size: 1.8rem; } }
 
-section#quem-sou {
-  padding-top: 130px; }
-  section#quem-sou .card {
-    border-radius: 8px;
-    background: #f4f4f4; }
-  section#quem-sou .card-image {
-    position: relative;
-    top: -100px; }
-    section#quem-sou .card-image .image {
-      margin: auto; }
-    section#quem-sou .card-image img {
-      border-radius: 50%;
-      border: 5px solid #ddd; }
-  section#quem-sou .card-content {
-    margin-top: -120px; }
+section#quem-sou .image {
+  margin: auto; }
+  section#quem-sou .image img {
+    border-radius: 50%;
+    border: 5px solid #ccc; }
 
-#tecnologias {
-  background-color: #f4f4f4; }
-  #tecnologias .level-item {
-    opacity: .7;
-    filter: grayscale(0.2); }
-    #tecnologias .level-item .image {
+section#quem-sou .quem-sou-texto {
+  font-size: 1.2rem; }
+
+section#tecnologias {
+  background-color: #e4e4e4; }
+  section#tecnologias .level-item {
+    opacity: .8;
+    transition: transform .5s; }
+    section#tecnologias .level-item .image {
       margin: auto; }
-    #tecnologias .level-item .heading {
+    section#tecnologias .level-item .heading {
       font-weight: bold;
-      color: #888;
       transition: color 1.2s; }
-    #tecnologias .level-item.colored {
-      filter: grayscale(0);
-      opacity: 1;
-      transform: scale(1); }
+    section#tecnologias .level-item.colored {
+      transform: scale(1.1); }
+
+section#projetos .image {
+  margin: 15px auto; }
 
 section#contato {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #1d1d1d;
+  background-color: #1f1f1f;
   color: #888; }
   section#contato .title {
     color: #ddd; }

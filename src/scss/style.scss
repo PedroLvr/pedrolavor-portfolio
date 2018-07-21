@@ -1,6 +1,10 @@
 body {
-    background: #fafafa;
+    background: #f4f4f4;
 }
+
+
+
+
 ///////////////////////////////////////////////////////////////////
 ////////////////////////// NAVBAR MENU ////////////////////////////
 ///////////////////////////////////////////////////////////////////
@@ -97,45 +101,30 @@ body {
 /////////////////////////// QUEM SOU //////////////////////////////
 ///////////////////////////////////////////////////////////////////
 section#quem-sou {
-    padding-top: 130px;
-
-    .card {
-        border-radius: 8px;
-        background: #f4f4f4;
-    }
-
-    .card-image {
-        position: relative;
-        top: -100px;
-
-        .image {
-            margin: auto;
-        }
-
+    .image {
+        margin: auto;
+        
         img {
             border-radius: 50%;
-            border: 5px solid #ddd;
+            border: 5px solid #ccc;
         }
     }
 
-    .card-content {
-        margin-top: -120px;
+    .quem-sou-texto {
+        font-size: 1.2rem;
     }
 }
 
 
-
 ///////////////////////////////////////////////////////////////////
-//////////////////////// TECH AND TOOLS ///////////////////////////
+////////////////////////// TECNOLOGIAS ////////////////////////////
 ///////////////////////////////////////////////////////////////////
-#tecnologias {
-    background-color: #f4f4f4;
+section#tecnologias {
+    background-color: #e4e4e4;
 
     .level-item {
-        opacity: .7;
-        filter: grayscale(.2);
-        // transform: scale(.95);
-        // transition: filter 1.2s, opacity 1.2s, transform .5s;
+        opacity: .8;
+        transition: transform .5s;
 
         .image {
             margin: auto;
@@ -143,19 +132,24 @@ section#quem-sou {
 
         .heading {
             font-weight: bold;
-            color: #888;
             transition: color 1.2s;
         }
 
         &.colored {
-            filter: grayscale(0);
-            opacity: 1;
-            transform: scale(1);
+            transform: scale(1.1);
         }
     }
 
 }
 
+///////////////////////////////////////////////////////////////////
+/////////////////////////// PROJETOS //////////////////////////////
+///////////////////////////////////////////////////////////////////
+section#projetos {
+    .image {
+        margin: 15px auto;
+    }
+}
 
 
 ///////////////////////////////////////////////////////////////////
@@ -164,7 +158,7 @@ section#quem-sou {
 section#contato {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #1d1d1d;
+    background-color: #1f1f1f;
     color: #888;
 
     .title {
